@@ -1,0 +1,24 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "wordpress thema from team beurre thon",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anso2410/restaurant.git"
+  },
+  "keywords": [
+    "ACF",
+    "wordpress",
+    "PHP"
+  ],
+  "author": "Team beurre Thon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anso2410/restaurant/issues"
+  },
+  "homepage": "https://github.com/anso2410/restaurant#readme"
+}
