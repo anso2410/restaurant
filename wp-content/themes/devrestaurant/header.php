@@ -1,1 +1,3 @@
-<?php bonjour?>
+
+
+<?php wp_head() ?>

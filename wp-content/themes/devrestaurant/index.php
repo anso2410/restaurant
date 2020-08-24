@@ -1,1 +1,1 @@
-<?php echo" dev resto test"?>
+<?php echo" dev resto test ceci est index de devrestaurant"?>
