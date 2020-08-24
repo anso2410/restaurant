@@ -50,8 +50,28 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+.container{
+    width: 100%;
+    height: auto;
+}
 
 .test{
-    color: red;
+    color: whitesmoke;
+    width: 500px;
+    height: auto;
+
+    position: relative;
+    top: 100px;
+    left: 200px;
+    font-size: 4em;
+    line-height: 150%;
+
+}
+
+.bg-image{
+    background-image: url("../images/banner-top.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 1000px;
+    width: 100%;
 }
