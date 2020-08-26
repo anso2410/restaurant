@@ -56,22 +56,54 @@ table {
 }
 
 .test{
-    color: whitesmoke;
-    width: 500px;
+    color:whitesmoke;
+    width: 800px;
     height: auto;
-
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 100%;
     position: relative;
-    top: 100px;
-    left: 200px;
-    font-size: 4em;
-    line-height: 150%;
+    top: 20%;
+    left: 10%;
+    font-size: 5em;
 
+}
+.container{
+    background-color: white;
 }
 
 .bg-image{
     background-image: url("../images/banner-top.jpg");
     background-repeat: no-repeat;
     background-size:contain;
-    height: 1000px;
+    height: 765px;
     width: 100%;
+    position :relative;
+    z-index: 1;
+
+}
+
+.size-image{
+    width: 800px;
+    height: 800px;
+}
+.chief{
+    margin-left: 300px;
+    margin-top: 200px;
+
+}
+.meal{
+    color: whitesmoke;
+   font-size: 42px;
+    display: inline;
+    margin-top: 200px;
+    margin-bottom: 60px;
+
+}
+.hachBlack{
+z-index: 28;
+    transform: rotate(180deg) ;
+ position: relative;
+    top:460px ;
+
 }
