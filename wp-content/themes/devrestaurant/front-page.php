@@ -54,8 +54,8 @@
             $subtitle = $post->post_subtitle;
             ?>
             <div class="titre">
-                <?php   echo "<p>$the_title<p/>";
-                echo $text;?>
+                <?php   echo "<p>$the_title<p/>";?>
+
             </div>
             <?php
             do_action( 'plugins/wp_subtitle/the_subtitle', array(
@@ -67,7 +67,8 @@
             ?>
             <div>
                 <?php  echo  "<p >$the_content</p>";?>
-                <?php  echo  "<p >$subtitle</p>";?>
+                <?php  echo  "<p >$subtitle</p>";
+                echo $text;?>
             </div>
         </div>
     </section>
@@ -86,6 +87,7 @@
             $the_title = $post->post_title;
             $subtitle = $post->post_subtitle;
             ?>
+
             <div class="titre-franchise">
                 <?php   echo "<p >$the_title<p/>"; ?><br>
             </div>
@@ -103,21 +105,34 @@
         </div>
 
         <div class="container-post">
-
-            <div class="post-franchise original">
-                <div></div>
-                <div></div>
+            <div class="bg-opcity">
+            <div class="img-original" >
+                <?php echo  wp_get_attachment_image( 66, 'cafet');?>
             </div>
-
-            <div class="post-franchise ">
-                <div></div>
-                <div></div>
             </div>
+        <div class="original-text">
+            <?php
+            $id = 67;
+            $post = get_post($id);
+            $the_content = $post->post_content;
+            $the_title = $post->post_title;
+            $subtitle = $post->post_subtitle;
+            ?>
+            <?php   echo "<p >$the_title<p/>"; ?><br>
+          <?php  do_action( 'plugins/wp_subtitle/the_subtitle', array(
+            'before'        => '<p class="subtitle">',
+                'after'         => '</p>',
+            'post_id'       => get_the_ID(),
+            'default_value' => ''
+            ) ); ?>
 
-            <div class="post-franchise">
-                <div></div>
-                <div></div>
-            </div>
+            <?php  echo  "<p class='cafet'>$the_content</p>";?>
+            <?php  echo  "<p  >$subtitle</p>"; ?><br>
+
+        </div>
+
+
+
         </div>
 </section>
 

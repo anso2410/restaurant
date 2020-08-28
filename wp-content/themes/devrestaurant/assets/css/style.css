@@ -213,14 +213,21 @@ margin-bottom: 5px;
 .titre-franchise{
     font-size: 1.8em;}
 
-.post-franchise{
-    height: 500px;
-    width: 80%;
-    background-color: green;
-    margin: 0 auto;
-    margin-bottom: 60px
-;
-}
-.original{
 
+.img-original{
+
+   float: right;}
+
+.original-text{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.cafet{
+    margin-top: 10px;
 }
