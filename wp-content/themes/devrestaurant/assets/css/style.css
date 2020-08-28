@@ -53,24 +53,27 @@ table {
 .container{
     width: 100%;
     height: auto;
+
+    position: relative;
+    z-index: 1;
 }
 
-.test{
-    color:whitesmoke;
+.test {
+    color: whitesmoke;
     width: 800px;
     height: auto;
+    position: relative;
+    left: 10%;
     font-family: 'Poppins', sans-serif;
+}
+.text{
     font-weight: 900;
     line-height: 100%;
-    position: relative;
-    top: 20%;
-    left: 10%;
+    top: 12%;
     font-size: 5em;
 
 }
-.container{
-    background-color: white;
-}
+
 
 .bg-image{
     background-image: url("../images/banner-top.jpg");
@@ -79,17 +82,21 @@ table {
     height: 765px;
     width: 100%;
     position :relative;
-    z-index: 1;
+
 
 }
 
 .size-image{
     width: 800px;
-    height: 800px;
+    height: 400px;
 }
 .chief{
-    margin-left: 300px;
+
+   margin-left: 170px;
     margin-top: 200px;
+    width: 930px;
+    height: 600px;
+
 
 }
 .meal{
@@ -101,9 +108,80 @@ table {
 
 }
 .hachBlack{
-z-index: 28;
+z-index: 23;
     transform: rotate(180deg) ;
  position: relative;
-    top:460px ;
+    top:215px ;
+
+}
+.trait{
+    color: whitesmoke;
+
+}
+.icone{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 130px;
+    height: 250px;
+    z-index: 100;
+    position: relative;
+    top: 420px;
+    z-index: 50;
+
+
+}
+.text-icone{
+margin-top: 100px;
+}
+.card {
+    border: 1px transparent solid;
+    border-top-left-radius: 50px;
+    border-top-right-radius:50px ;
+    width: 290px;
+    height: 90%;
+    background-color: white;
+    position: relative;
+    -moz-box-shadow: 5px 5px 10px 0px #cfcfcf;
+    -webkit-box-shadow: 5px 5px 10px 0px #cfcfcf;
+    -o-box-shadow: 5px 5px 10px 0px #cfcfcf;
+    box-shadow: 5px 5px 10px 0px #cfcfcf;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=10);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+
+
+}
+.discover{
+    margin-left: 410px;
+    position: relative;
+    width:550px ;
+    height: 360px;
+    bottom: 420px;
+    text-align: justify;
+    background-color: white;
+padding: 35px 35px 35px 60px ;
+
+
+    padding-right: 40px;
+    -moz-box-shadow: 10px 10px 20px 0px #656565;
+    -webkit-box-shadow: 10px 10px 20px 0px #656565;
+    -o-box-shadow: 10px 10px 20px 0px #656565;
+    box-shadow: 10px 10px 20px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=20);
+}
+.titre{
+
+margin-bottom: 5px;
+
+    font-size: 1.7em;
+}
+.subtitle{
+    font-size: 2em;
+    font-weight:600;
+
+}
+.content{
 
 }
