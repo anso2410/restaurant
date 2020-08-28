@@ -15,20 +15,16 @@
 </head>
 <body>
 
-
+<!--Banner Top -->
 <main class="container">
-
     <section class ="bg-image  ">
-
         <div class=" test text">
             <p class="meal">For a happy day</p>
-
-            <?php  while(have_posts()) : the_post();?>
-
-<?php the_content(); ?>
-<?php endwhile; ?>
-
+                <?php  while(have_posts()) : the_post();?>
+                    <?php the_content(); ?>
+                <?php endwhile; ?>
         </div>
+<!--Cards -->
         <section class="icone ">
             <div class="card">
                 <h6 class="text-icone">QUALITY FOODS</h6></div>
@@ -39,13 +35,14 @@
                 <H6 class="text-icone">ORIGINAL RECIPES</H6>
             </div>
         </section>
-
+<!-- hachures -->
         <div class="hachBlack">
-            <img src="<?php echo theme_images('hachures-blanches.png') ?>" alt="image"></div>
+            <img src="<?php echo theme_images('hachures-blanches.png') ?>" alt="image">
+        </div>
     </section>
-    </main>
 
 
+<!--the CHEF -->
     <section class="chief">
         <?php echo  wp_get_attachment_image( 40, 'chief');?>
         <div class="discover">
@@ -59,10 +56,7 @@
             <div class="titre">
                 <?php   echo "<p>$the_title<p/>";
                 echo $text;?>
-
             </div>
-
-
             <?php
             do_action( 'plugins/wp_subtitle/the_subtitle', array(
                 'before'        => '<p class="subtitle">',
@@ -71,36 +65,64 @@
                 'default_value' => ''
             ) );
             ?>
-            <div class="subtitle">
+            <div>
+                <?php  echo  "<p >$the_content</p>";?>
                 <?php  echo  "<p >$subtitle</p>";?>
             </div>
-            <div class="content">
-                <?php  echo  "<p >$the_content</p>"; ?>
-
-
-            </div>
-
-
-
         </div>
     </section>
-<section>
-    <div class="original">
-        <div></div>
-        <div></div>
-    </div>
-    <div class="restoBrussel">
-        <div></div>
-        <div></div>
-    </div>
-    <div class="outssiplou">
-        <div></div>
-        <div></div>
-    </div>
+
+<!-- our Restaurants-->
+
+    <section class="franchise">
+        <div class="hachBlack2">
+            <img src="<?php echo theme_images('hachures-blanches.png') ?>" alt="image">
+        </div>
+        <div class="restaurant">
+            <?php
+            $id = 63;
+            $post = get_post($id);
+            $the_content = $post->post_content;
+            $the_title = $post->post_title;
+            $subtitle = $post->post_subtitle;
+            ?>
+            <div class="titre-franchise">
+                <?php   echo "<p >$the_title<p/>"; ?><br>
+            </div>
+            <?php
+            do_action( 'plugins/wp_subtitle/the_subtitle', array(
+            'before'        => '<p class="subtitle">',
+            'after'         => '</p>',
+            'post_id'       => get_the_ID(),
+            'default_value' => ''
+            ) );
+            ?>
+            <div>
+                <?php   echo "<p>$subtitle<p/>"; ?>
+            </div>
+        </div>
+
+        <div class="container-post">
+
+            <div class="post-franchise original">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="post-franchise ">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="post-franchise">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
 </section>
 
 </div>
-
+</main>
 <?php get_footer() ?>
 </body>
 </html>
